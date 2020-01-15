@@ -3,3 +3,4 @@ theme: jekyll-theme-midnight
 plugins:
   - jemoji
 permalink: /:categories/:slug
+excerpt_separator: <!-- more -->
