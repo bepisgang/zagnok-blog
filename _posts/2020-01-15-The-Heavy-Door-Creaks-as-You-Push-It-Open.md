@@ -1,3 +1,8 @@
+---
+layout: post
+title: The Heavy Door Creaks as You Push It Open…
+---
+
 # Hi There!
 
 Here's an inaugural post for a blog to chronicle the development of the Zagnok project. It's mostly to help me remember and document stuff, but you're welcome to follow along if you like!
