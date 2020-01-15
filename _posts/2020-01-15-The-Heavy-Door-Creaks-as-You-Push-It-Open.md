@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: The Heavy Door Creaks as You Push It Open…
 date: 2020-01-15 09:00:00 -0700
 ---
