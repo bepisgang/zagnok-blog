@@ -2,10 +2,13 @@
 template: default
 ---
 
+### Recent Posts
+
 <ul>
+  <li>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+  <h4>{% post.title %}</h4>
+      {% post.excerpt %}
   {% endfor %}
+  </li>
 </ul>
