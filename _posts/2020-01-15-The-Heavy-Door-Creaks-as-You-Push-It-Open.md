@@ -4,7 +4,7 @@ title: The Heavy Door Creaks as You Push It Open…
 date: 2020-01-15 09:00:00 -0700
 ---
 
-# Hi There!
+## Hi There!
 
 Here's an inaugural post for a blog to chronicle the development of the Zagnok project. It's mostly to help me remember and document stuff, but you're welcome to follow along if you like!
 
@@ -12,7 +12,7 @@ The idea for Zagnok began as a hackathon project I worked on with my sister. We 
 <!-- more -->
 Which is pretty much the most productive way possible to use Slack, and I'm sure exactly what was envisioned for the product.
 
-# Vision
+## Vision
 
 Our goal with future versions is to implement an API that can be used to track encounter state: Things like turn order, character status, monster health, etc. This API could be put to any number of novel uses; in parallel I'm working on a project for displaying various monster details.
 
