@@ -3,7 +3,7 @@ template: default
 ---
 <h1>Chronicling development of the <a href="https://github.com/bepisgang/zagnok">Zagnok project</a></h1>
 
-<h3>Recent Posts</h3>
+<h2>Recent Posts</h2>
 
 <ul>
   <li>
