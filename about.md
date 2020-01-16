@@ -8,7 +8,8 @@ template: default
   <li>
   {% for post in site.posts %}
     <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      {{ post.excerpt }}
+    <blockquote>{{ post.excerpt }}</blockquote>
+    <br/>
   {% endfor %}
   </li>
 </ul>
