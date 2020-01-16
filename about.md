@@ -1,6 +1,7 @@
 ---
 template: default
 ---
+<h2>Chronicling development of the <a href="https://github.com/bepisgang/zagnok">Zagnok project</a></h2>
 
 <h3>Recent Posts</h3>
 
