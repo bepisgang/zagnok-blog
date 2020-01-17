@@ -5,7 +5,7 @@ template: default
 
 Zagnok began as a hackathon project for DMing Slack-based [D&D](https://dnd.wizards.com)/[Pathfinder](https://paizo.com/pathfinder)-style encounters.
 
-Our goal is to implement an API and accompanying robust data set that can be used to track encounter state or act as a searchable bestiary.
+Our goal is to implement a more general API and accompanying robust data set that can be used to track encounter state or act as a searchable bestiary.
 
 This is a collection of thoughts as we travel this journey.
 
