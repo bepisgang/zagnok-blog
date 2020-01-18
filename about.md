@@ -1,5 +1,6 @@
 ---
 template: default
+permalink: /
 ---
 <h2>Chronicling development of the <a href="https://github.com/bepisgang/zagnok">Zagnok project</a></h2>
 
