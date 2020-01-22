@@ -6,7 +6,7 @@ date: 2020-01-21 07:13:00 -0800
 ## {{ page.title }}
 
 Right now I'm working on parsing data from the Pathfinder 1E bestiary. I've mostly been using regular expressions to parse the various lines and sections and that's worked fairly well - until now.
-<!-- More -->
+<!-- more -->
 Meet Spell-Like Abilities. This section contains several lines, each of which contains a frequency followed by a comma-separated list of ability names. They look something like this:
 
 **Spell-Like Abilities** (CL 7th)<br>
@@ -27,4 +27,4 @@ At will—*greater teleport* (self plus 50 lbs. of objects only), *minor image* 
 **Spell-Like Abilities** (CL 12th)<br>
 At will—*fear* (single target, DC 19), *greater teleport* (self plus 50 lbs. of objects only), *minor image* (DC 17), *unholy blight* (DC 19)
 
-Commas and commas and commas… Perhaps a pure regular expression approach is not the best solution to this problem. At least, not at my own skill level. Is it possible we need to write an actual grammar for spells and spell-like abilities, and parse each line according to that? :thinking_face:
+Commas and commas and commas… Perhaps a pure regular expression approach is not the best solution to this problem. At least, not at my own skill level. Is it possible we need to write an actual grammar for spells and spell-like abilities, and parse each line according to that? 🤔
