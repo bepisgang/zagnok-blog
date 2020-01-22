@@ -1,6 +1,7 @@
 ---
 title: Parsing Spell-Like Abilities
 date: 2020-01-21 07:13:00 -0800
+published: false
 ---
 
 ## {{ page.title }}
@@ -17,7 +18,7 @@ Easy, right? We don't even need a regex for this: Just explode/split the list on
 **Spell-Like Abilities** (CL 7th)<br>
 3/day—*darkness*, *hallucinatory terrain* (DC 18), *knock*, *light*
 
-OK, now we're getting into regex territory. We can still split on the comma, then regex-parse each result into ability name and optional DC. Hold on, though! There are more details that come in those parentheses:
+OK, now we're getting into regex territory. We can still split on the comma, then regex-parse each result into ability name and optional DC. Hold on, though! There can be more details in those parentheses:
 
 **Spell-Like Abilities** (CL 7th)<br>
 At will—*greater teleport* (self plus 50 lbs. of objects only), *minor image* (DC 17), *unholy blight* (DC 19)
@@ -28,3 +29,5 @@ At will—*greater teleport* (self plus 50 lbs. of objects only), *minor image* 
 At will—*fear* (single target, DC 19), *greater teleport* (self plus 50 lbs. of objects only), *minor image* (DC 17), *unholy blight* (DC 19)
 
 Commas and commas and commas… Perhaps a pure regular expression approach is not the best solution to this problem. At least, not at my own skill level. Is it possible we need to write an actual grammar for spells and spell-like abilities, and parse each line according to that? 🤔
+
+The first question to ask is "Do we need a high level of granularity in this data?" Is it enough simply to store the text somewhere in a human-readable form? I say nay! That _would_ work for a large range of use cases, but since we want this data to be as actionable as possible I think it behooves us to break it down as much as we can. For now I think keeping the more arbitrary text like "self plus 50 lbs. of objects only" as just text is fine - but I suspect we could actually find a pattern to that and break it down as well.
