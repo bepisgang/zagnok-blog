@@ -1,7 +1,6 @@
 ---
 title: Parsing Spell-Like Abilities
-date: 2020-01-21 07:13:00 -0800
-published: false
+date: 2020-01-24 07:13:00 -0800
 ---
 
 ## {{ page.title }}
@@ -23,11 +22,11 @@ OK, now we're getting into regex territory. We can still split on the comma, the
 **Spell-Like Abilities** (CL 7th)<br>
 At will—*greater teleport* (self plus 50 lbs. of objects only), *minor image* (DC 17), *unholy blight* (DC 19)
  
- Well… this is starting to look more like free text, isn't it? Take a look at the spell-like abilities for the [Devil, Erinyes](http://legacy.aonprd.com/bestiary/devil.html#devil-erinyes) entry: 
+ Well… this is starting to look more like free text, isn't it? Take a look at the spell-like abilities for the [Devil, Erinyes](http://legacy.aonprd.com/bestiary/devil.html#devil-erinyes) entry, for example: 
  
 **Spell-Like Abilities** (CL 12th)<br>
 At will—*fear* (single target, DC 19), *greater teleport* (self plus 50 lbs. of objects only), *minor image* (DC 17), *unholy blight* (DC 19)
 
-Commas and commas and commas… Perhaps a pure regular expression approach is not the best solution to this problem. At least, not at my own skill level. Is it possible we need to write an actual grammar for spells and spell-like abilities, and parse each line according to that? 🤔
+Commas and commas and commas… Commas _inside_ parentheses, commas _outside_ parentheses! Perhaps a pure regular expression approach is not the best solution to this problem. At least, not at my own skill level. Is it possible we need to write an actual grammar for spells and spell-like abilities, and parse each line according to that? 🤔
 
-The first question to ask is "Do we need a high level of granularity in this data?" Is it enough simply to store the text somewhere in a human-readable form? I say nay! That _would_ work for a large range of use cases, but since we want this data to be as actionable as possible I think it behooves us to break it down as much as we can. For now I think keeping the more arbitrary text like "self plus 50 lbs. of objects only" as just text is fine - but I suspect we could actually find a pattern to that and break it down as well.
+A sane question to ask is "Do we _need_ such a high level of granularity in this data?" Is it enough simply to store the text somewhere in a human-readable form? I say nay! That _would_ work for a large range of use cases, but since we want this data to be as actionable as possible I think it behooves us to break it down as much as we can. For now I think keeping the more arbitrary text like "self plus 50 lbs. of objects only" as plain text is fine - but I suspect we could actually find a pattern to that and break it down as well. I'll give it some thought and post an update.
