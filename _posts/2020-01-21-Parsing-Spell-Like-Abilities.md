@@ -1,5 +1,5 @@
 ---
-title: Parsing Spell-Like Abilities
+title: Parsing Spells and Spell-Like Abilities
 date: 2020-01-24 07:13:00 -0800
 ---
 
